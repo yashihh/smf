@@ -508,7 +508,7 @@ func (dataPath *DataPath) ActivateTunnelAndPDR(smContext *SMContext, precedence 
 				logger.CtxLog.Errorln("ActivateTunnelAndPDR failed", err)
 				return
 			} else {
-				TSNSlaveIP := net.ParseIP("172.168.57.10")
+				TSNSlaveIP := net.ParseIP("172.168.56.10")
 				logger.TSN.Warnln("TSNSlaveIP address is set to", TSNSlaveIP)
 				ULPDR.PDI = PDI{
 					SourceInterface: pfcpType.SourceInterface{InterfaceValue: pfcpType.SourceInterfaceAccess},
